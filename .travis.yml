@@ -1,10 +1,12 @@
 language: java
 sudo: enabled
 services:
-    - mysql
-    - xvfb
+    - xvfb 
+env:
+    global:
+     - TRAVIS=true
 before_install:
- - sudo apt-get update
+  - sudo apt-get update
   - sudo apt-get install dbus-x11
   - export DISPLAY=:99.0
   - sleep 3
