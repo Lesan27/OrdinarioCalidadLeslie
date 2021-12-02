@@ -72,13 +72,7 @@ public class mernCrudTest {
 		  
 	  }
 	  
-	  @Test
-	  public void testread() throws Exception {
-		  driver.get("https://mern-crud.herokuapp.com/");
-		  String tag = driver.findElement(By.xpath("/html/body/div/div/div[2]/table/tbody/tr/td[2]")).getText();
-		  assertThat("les27@gmail.com", is(tag));
-		  
-	  }
+	  
 
 	  @Test
 	  public void testdelete() throws Exception {
